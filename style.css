@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background-color: black;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+}
+
+.Second-container input {
+   border: #565c65 1px solid;
+   padding: 0.2rem;
+   background-color: black;
+}
+
+input[type="search"] {
+    color: #fff;
+    font-family: "Inter", sans-serif ;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Wrapper-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.First-container {
+    display: flex;
+    align-items: center;
+}
+
+.Second-container {
+    display: flex;
+    align-items: center;
+}
+
+.First-container p {
+    margin-right: 0.5rem;
+}
+
+
+.Wrapper-third {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Fourth-container,
+.Fith-container,
+.Six-container {
+    display: flex;
+    align-items: center;
+    
+}
+.Fourth-container,
+.Fith-container {
+    margin-right: 1.5rem;
+}
+
+.Fourth-container p,
+.Fith-container p,
+.Six-container p {
+    margin-right: 0.2rem;
+}
+
+.Wrapper-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1020px) {
+    .Wrapper-first,
+    .Wrapper-third {
+        display: none;
+    }
+    .container-header {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .Wrapper-thrid-1000px {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .Wrapper-first-1000px {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1020px) {
+    .Wrapper-first-1000px,
+    .Wrapper-thrid-1000px{
+       display: none;
+    }
+}
+
+.paragrahphe-six {
+    border: solid 1px #e81147 ;
+    padding: 0.1rem;
+    padding-inline: 0.2rem;
+    font-size: 0.9rem;
+}
+.paragrahphe-six:hover {
+    background-color: #e81147;
+    cursor: pointer;
+}
+
+
+
+/*END OF HEADER*/
+
+
+/*MAIN*/
+
+/*FIRST SECTION !! */
+
+.nasa-news {
+    background-image: url('Nasa-images/ClearSpace-1_pillars.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.news-first {
+    margin-bottom: 2rem;
+    padding-inline:2.5rem ;
+    padding-block: 4rem ;
+}
+
+
+.news-first h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+}
+
+.news-first p {
+    font-size: 1rem;
+    font-family: "Public Sans", sans-serif;
+    margin-block: 1rem;
+}
+
+.news-first button {
+    background: #e81147;
+    border:none ;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.news-first button:active {
+    background: rgba(158, 1, 40, 0.8);
+    border: solid rgba(79, 79, 255, 1) 5px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-inline: 2.5rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.news-grid-1 {
+    padding-top: 1rem ;
+    border-top: solid rgba(195, 177, 186, 0.8) 1px;
+    
+}
+
+.paragrahphe {
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.paragrphe{
+    font-family: "DM Mono", monospace;
+    font-size: 0.719rem;
+    margin-bottom: 1rem ;
+    letter-spacing: 2px;
+}
+
+
+
+@media (max-width: 650px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*END OF SECTION*/
+
+/*New Section*/
+
+.Featured-News {
+    padding-block: 3rem;
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.grid-featured {
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.5fr;
+    gap: 1rem;
+    margin-block: 2rem ;
+}
+
+.Other-Article img {
+    max-width: 5rem;
+    min-height: 5rem;
+}
+
+.featured-style-1 {
+    background-image: url('Nasa-images/PIA03012~orig.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.featured-style-1 {
+    color: #fff;
+    max-width: 40rem ;
+    min-height: 25rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Artcile {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.infos-article {
+    align-self: flex-end;
+    
+}
+
+.featured-style-2 {
+    background-image: url('Nasa-images/em1-bol-performance.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.featured-style-2 {
+    color: #fff;
+    max-width: 19.5rem ;
+    min-height: 25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.featured-style-3 {
+    color: #fff;
+    max-width: 19.5rem ;
+    min-height: 12rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.featured-style-3 {
+    background-image: url('Nasa-images/videoframe_0.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.featured-style-4 {
+    color: #fff;
+    max-width: 19.5rem ;
+    min-height: 12rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.featured-style-4 {
+    background-image: url('Nasa-images/72cbe31328dc80466f83d72d15e299fc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.Artcile p {
+    font-family: "DM Mono", monospace;
+    font-size: 0.719rem;
+    margin-left: 0.3rem;
+}
+
+.paragrahphe-2 {
+    font-size: 1.375;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 800;
+}
+
+
+.Featured-Header h2 {
+    margin-block: 2.5rem;
+    font-size: 3rem;
+    font-family:"Inter", sans-serif ;
+}
+
+.Featured-Header p {
+    margin-block: 2.5rem;
+    font-size: 1.5rem;
+    font-family:"Inter", sans-serif ;
+    font-weight: 600;
+}
+
+.Featured-Header {
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    padding-inline-end: 2.rem;
+}
+
+.p-featured {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-featured p {
+    align-self: flex-end;
+}
+
+.h2-featured {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-featured h2 {
+    align-self: flex-start;
+}
+
+/*2 éme PARTIE DE SECTION*/
+
+.grid-others {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.Other-Article {
+    max-width: 20.25rem;
+    min-height: 6rem;
+}
+
+.Other-Article img {
+   border-radius: 50%;
+}
+
+.grid-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.Some-Article {
+    display: flex;
+    align-items: center;
+    
+}
+
+.Some-Article i {
+    margin-right: 0.5rem;
+}
+
+.nice-p {
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.Some-Article p {
+    font-family: "DM Mono", monospace;
+    font-size: 0.719rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+    .grid-others {
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+    .container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .Featured-Header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-featured {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+
+    .featured-style-1 {
+        max-width: 19.5rem;
+    }
+    
+    .p-featured p {
+        align-self: flex-start;
+    }
+} 
